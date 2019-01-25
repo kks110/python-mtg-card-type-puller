@@ -25,7 +25,7 @@ def write_file(creature_input, card_data, set_count, first_row = False):
             set_date = set_json['released_at']
             writer.writerow([card_name, card_colour, rarity, set_name, set_date])
 
-def pullList():
+def pull_list():
     card_counter = 0
     card_input = input("What type of card are you looking for? - ")
     #API call to get the JSON file
@@ -47,7 +47,7 @@ def pullList():
         card_counter += set_count
 
 def main():
-    pullList()
+    pull_list()
 
 
 #This starts my program!
