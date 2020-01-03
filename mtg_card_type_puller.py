@@ -5,7 +5,7 @@ import csv
 
 
 # This writes the file.
-def write_file(creature_input, card_data, set_count, write_first_row = False):
+def write_file(creature_input, card_data, set_count, write_first_row=False):
     with open('mtg_' + creature_input + '.csv', 'a', newline='', encoding='utf8') as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
         if write_first_row:
